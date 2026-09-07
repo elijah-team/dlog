@@ -249,8 +249,8 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://github.com/dritter-hd/dlog.git</connection>
-		<url>https://github.com/dritter-hd/dlog</url>
+		<connection>scm:git:https://github.com/elijah-team/dlog.git</connection>
+		<url>https://github.com/elijah-team/dlog/dlog</url>
 	</scm>
 
 	<developers>
