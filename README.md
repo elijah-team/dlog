@@ -60,6 +60,8 @@ UnionAll {
 }
 ```
 
+> todo the above looks like code (looking at you, gephi and gremlin)
+
 ## License
 
 Apache 2.0 license [here](https://github.com/dritter-hd/dlog/blob/master/LICENSE)
