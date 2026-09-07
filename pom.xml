@@ -17,6 +17,7 @@
 		<maven.compiler.target>17</maven.compiler.target>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.release>17</maven.compiler.release>
+		<slf4j-api.version>2.0.18</slf4j-api.version>
 	</properties>
 
 	<dependencies>
@@ -54,13 +55,13 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>${org.slf4j.version}</version>
-			<scope>provided</scope>
+			<version>${slf4j-api.version}</version>
+			<!--<scope>provided</scope>--> <!--!!-->
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>${org.slf4j.version}</version>
+			<artifactId>slf4j-simple</artifactId>
+			<version>${slf4j-api.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core shows no vulns (yeah right) -->
@@ -229,8 +230,9 @@
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<configuration>
-						<source>1.7</source>
-						<target>1.7</target>
+<!--						<source>17</source>-->
+<!--						<target>17</target>-->
+<!--						<release>17</release>-->
 						<encoding>${project.build.sourceEncoding}</encoding>
 					</configuration>
 				</plugin>
